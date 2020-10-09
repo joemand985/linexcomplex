@@ -1,0 +1,30 @@
+html {
+	background-color: #f2f2f2;
+	background-image: 
+	url(../images/ikonica_03.png),
+	url(../images/ikonica_02.png),
+	url(../images/ikonica_01.png);
+	background-position: 
+	-10vw top,
+	70vw center,
+	-10vw bottom;
+	background-repeat: no-repeat;
+	background-size: 30vw, 40vw, 70vw;
+}
+
+#wrapper {
+	margin: 5vw 10vw;
+	color: #0c3f68;
+}
+
+#linex_complex_logo{
+	width: 15%;
+}
+
+h3 {
+	color: orange;
+}
+
+h4 {
+	font-weight: bold;
+}
