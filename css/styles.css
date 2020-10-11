@@ -1,3 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: "MuseoSans-300";
+    src: url('../fonts/MuseoSans-300.otf');
+}
+
+@font-face {
+    font-family: "MuseoSans_1";
+    src: url('../fonts/MuseoSans_1.otf');
+}
+
+@font-face {
+    font-family: "MuseoSans_0";
+    src: url('../fonts/MuseoSans_0.otf');
+}
+
 html {
 	background-color: #f2f2f2;
 	background-image: 
@@ -5,26 +25,91 @@ html {
 	url(../images/ikonica_02.png),
 	url(../images/ikonica_01.png);
 	background-position: 
-	-10vw top,
-	70vw center,
-	-10vw bottom;
+	-14vw 2vh,
+	58vw 35%,
+	-19vw 85%;
 	background-repeat: no-repeat;
-	background-size: 30vw, 40vw, 70vw;
+	background-size: 35vw, 57vw, 85vw;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: MuseoSans-300, sans-serif;
+    /*font-size: 1vw;*/
+    /*position: absolute;*/
 }
 
 #wrapper {
-	margin: 5vw 10vw;
+	/*position: relative;
+	overflow-x: hidden;*/
+	margin: 5vw 14vw;
 	color: #0c3f68;
 }
 
-#linex_complex_logo{
-	width: 15%;
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #0c3f68;
+}
+
+a.mailto_link {
+	color: #ed682b;
+}
+
+h3, h2 {
+	color: #ed682b;
+	margin-top: 5vh;
+}
+
+h2 {
+	margin-bottom: 5vh;
+}
+
+h1, h3, h4 {
+	font-family: MuseoSans_1, sans-serif;
+}
+
+h4.bold, .bold_text {
+	font-family: MuseoSans_0;
 }
 
 h3 {
-	color: orange;
+	text-transform: uppercase;
 }
 
-h4 {
-	font-weight: bold;
+.lowercase {
+	text-transform: none;
+}
+
+p {
+	margin-bottom: 3vh;
+}
+
+#linex_complex_logo {
+	width: 20%;
+	margin-bottom: 5vw;
+}
+
+#sandoz_logo {
+	width: 20%;
+	margin-top: 5vw;
+}
+
+#linex_complex_code {
+	float: right;
+    font-size: 7pt;
+    margin: 5vw;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ed682b; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0; /* Also needed for space (tweak if needed) */
+  font-size: 8pt;
 }
